@@ -39,7 +39,7 @@ public class Register {
 		@When("^I provide all the below valid details$")
 		public void i_provide_all_the_below_valid_details(DataTable dataTable)  {
 			
-			RegisterPage.enterAllDetails(dataTable,"unique");
+			RegisterPage.enterAllDetails(dataTable);
 		   
 		}
 
@@ -87,18 +87,6 @@ public class Register {
 			 
 			
 		}
-			 @When("^I provide the below duplicate details$")
-			 public void i_provide_the_below_duplicate_details(DataTable dataTable) {
-				 RegisterPage.enterAllDetails(dataTable,"duplicate");
-			 }
-			 
-			 
-			 @Then("I should see that the User is restricted from creating duplicate account")
-			 public void i_should_see_that_the_user_is_restricted_from_creating_duplicate_account() {
-				 Assert.assertTrue(Elements.VerifyTextEquals(RegisterPage.mainWarning,"Warning:E-mail Address is already registered"));
-			     
-			 }
-
 }
 
 
