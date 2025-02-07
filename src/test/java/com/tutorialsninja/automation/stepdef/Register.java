@@ -49,8 +49,8 @@ public class Register {
 		    
 		}
 
-		@And("^I click on Continue button$")
-		public void i_click_on_Continue_button()  {
+		@And("^I click on Continue Button$")
+		public void i_click_on_continue_button() {
 			Elements.click(RegisterPage.continueButton);
 		    
 		}
@@ -64,7 +64,11 @@ public class Register {
 			
 		}
 				
-
+		@When("^I click on Continue Button$")
+		public void i_click_on_continue_button() {
+			Elements.click(RegisterPage.continueButton);
+		    
+		}
 		
 			@Then("I should see that the User Account is not created")
 			public void i_should_see_that_the_user_account_is_not_created() {

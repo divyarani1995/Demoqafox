@@ -6,12 +6,13 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.tutorialsninja.automation.base.Base;
 
-public class AccountSuccessPage {
-	public AccountSuccessPage(){
+public class ForgotPasswordPage {
+	public ForgotPasswordPage() {
 		PageFactory.initElements(Base.driver, this);
 	}
-	
-	@FindBy(linkText="Success")
-	public static WebElement SuccessBreadCrum;
+	@FindBy(id="input-email")
+	public static WebElement emailField;
+	@FindBy(css="input[type='submit'][value='Continue']")
+	public static WebElement continueButton;
+
 }
-src/main/java

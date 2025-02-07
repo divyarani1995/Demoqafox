@@ -4,12 +4,17 @@ import java.util.Map;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 
+import com.tutorialsninja.automation.base.Base;
 import com.tutorialsninja.automation.framework.Elements;
 
 import io.cucumber.datatable.DataTable;
 
-public class RegisterPage {@FindBy(id="input-firstname")
+public class RegisterPage {
+	public RegisterPage(){
+		PageFactory.initElements(Base.driver, this);}
+ @FindBy(id="input-firstname")
 public static WebElement firstname;
 @FindBy(id="input-lastname")
 public static WebElement lastname;

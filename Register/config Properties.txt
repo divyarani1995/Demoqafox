@@ -1,4 +1,0 @@
-url=http://www.tutorialsninja.com/demo/
-browser=chrome
-PageLoadTimeOut=240
-src/main/resources

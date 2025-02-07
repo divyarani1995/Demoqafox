@@ -37,7 +37,7 @@ Scenario: Verify whether the user is able to register into the application by op
     And I click on Continue Button
     Then I should see that the User account has successfully created
     @Register @Four
-    Scenario: Verify whether the user is restricted from creating duoplicate account
+    Scenario: Verify whether the user is restricted from creating duplicate account
     Given I launch the application
     And I navigate to Account Registration page
     When I provide all the below valid details

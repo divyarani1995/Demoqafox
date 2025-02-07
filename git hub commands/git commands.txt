@@ -1,9 +1,0 @@
-$ git status
-$ git add .
-$ git status
-$ git commit -m "Uploading Initial framework project files"
-$ git push origin main
-
-$ git commit -m "Updated the framework a bit and started creating the automationscripts for Register functionality"
-
-
