@@ -11,10 +11,10 @@ import io.cucumber.junit.Cucumber;
 
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features={"classpath:FeatureFiles/search.feature" },
+@CucumberOptions(features={"classpath:FeatureFiles/Order.feature" },
 glue={"classpath:com.tutorialsninja.automation.stepdef"},
 plugin={"html:target/cucumber_html_report"},
-tags = "@Search and @Two")
+tags = "@Order and @One")
 public class Runner {
 
 }

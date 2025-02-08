@@ -25,11 +25,10 @@ SearchResultPage searchResultPage=new SearchResultPage();
 
 		
 
-		@Then("I should see a message informing \"([^\\\"]*)\\\"$\"")
+		@Then("I should see a message informing {string}")
 		public void i_should_see_a_page_displaying_the_message(String message) {
-			Assert.assertTrue(Elements.VerifyTextEquals(SearchResultPage.noResultsMessage, message));  
+		    Assert.assertTrue(Elements.VerifyTextEquals(SearchResultPage.noResultsMessage, message));
 		}
-
 
 
 

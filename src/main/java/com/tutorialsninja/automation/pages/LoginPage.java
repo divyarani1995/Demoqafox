@@ -26,5 +26,9 @@ public static void dologin(String email,String password) {
 	    Elements.TypeText(LoginPage.passwordField, password);
 	    Elements.click(LoginPage.loginButton);
 }
-
+public static void dologin() {
+	Elements.TypeText(emailField, Base.reader.getUsername());
+	   Elements.TypeText(passwordField, Base.reader.getPassword());
+	   Elements.click(LoginPage.loginButton);
+}
 }
