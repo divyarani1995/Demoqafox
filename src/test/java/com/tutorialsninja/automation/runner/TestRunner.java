@@ -15,6 +15,6 @@ import io.cucumber.junit.Cucumber;
 glue={"classpath:com.tutorialsninja.automation.stepdef"},
 plugin={"html:target/cucumber_html_report"},
 tags = "@Order and @One")
-public class Runner {
+public class TestRunner {
 
 }
